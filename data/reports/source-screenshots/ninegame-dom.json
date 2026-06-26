@@ -1,0 +1,238 @@
+{
+  "title": "验证码拦截",
+  "url": "https://www.9game.cn//kc//_____tmd_____/punish?x5secdata=xfqr0IM9fK23E6QKh4f749qMXJGRFYtJPDGhV7Z30afVr40QOOVin3zWW_s8Di72pLiG_y3RTrP8K6LwbBl1sOMIING36iy9abys_ws0X4zlpEFIbxbwAMpAWKqQJDJPJ2ficByFIMXtUqGPvil57-U7G1m7b_sb4ukhGtijfWEJQ0v8vQfsb2Uq96mdy-Y7EPxPCSl8TsJfSLcG_bGV0FK9D5-tYWELCmUDz1SIN8TzhbzUdkUzxxoK2ud0xu_ZRPltCNN_IS30EoJmeJzqukcGi4pEE_5KS4fbaDOvtCbXAR6xFkCzJK7xqz8YTvhNkb9iaGpQnIZtlcHb9JeBIdu-NAjfRxojxJ7_-etn8u8LROCYUoO1h4sdPOzD8Rb-Jn1uhNmEdDxbRIx8TVEJM3mlUK7YUj0nTZQkxn9NPZXeneTGkMKNZma6lFGzNn-uRoo2D-mm5mGacpv8MkjwFhcTuoEtO8kg8GRR316Mg-YZ3s79JfV_PGumy6TLUp-QkxRuBtzPR_tJdLj2MFZD31UHdKOe4uuxzM0q3DS0JlHc0vrqKhgVzVv1vlsuLJcRPpQ_oshWUfRA62q-TjuCbbJBK7ylBCE0sS_ikc7uYgGLkZzj3QUOZRHzh3H1EjELyJpQfTdMn-KBCIWa6GrdR1JFOWCCdS3xqipCdE_f2jv50mwag5qeSzwAKWZlf337vISz2t4J9RWXhaI1hAzNMYP2qC3KI9GEVFPBeYNgi00ONC65n_dW1_ewEeZKOj5veozhdN7BsUuqi4xHFwlivtSKRkZr4prmew34btOvFuHd8__bx__www.9game.cn%2fkc%2f&x5step=1",
+  "text": "亲，请拖动下方滑块完成验证\n\n通过验证以确保正常访问\n\n\n请按住滑块，拖动到最右边\n\n点我反馈 >\n\n© 1999-2026 Alibaba.com. All rights reserved.",
+  "items": [
+    {
+      "tag": "DIV",
+      "cls": "baxia-punish captcha  pc ",
+      "text": "亲，请拖动下方滑块完成验证\n\n通过验证以确保正常访问\n\n\n请按住滑块，拖动到最右边\n\n点我反馈 >\n\n© 1999-2026 Alibaba.com. All right  re erved.",
+      "href": "",
+      "src": "",
+      "x": 0,
+      "y": 0,
+      "w": 1400,
+      "h": 52
+    },
+    {
+      "tag": "A",
+      "cls": "",
+      "text": "http ://www.alibaba.com/",
+      "href": "https://www.alibaba.com/",
+      "src": "",
+      "x": 188,
+      "y": 27,
+      "w": 241,
+      "h": 35
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "text": "点击查看源网页",
+      "href": "",
+      "src": "https://img.alicdn.com/tfs/TB17G2dJGmWBuNjy1XaXXXCbXXa-241-41.png",
+      "x": 188,
+      "y": 14,
+      "w": 241,
+      "h": 41
+    },
+    {
+      "tag": "DIV",
+      "cls": "bannar",
+      "text": "亲，请拖动下方滑块完成验证\n\n通过验证以确保正常访问\n\n\n请按住滑块，拖动到最右边\n\n点我反馈 >",
+      "href": "",
+      "src": "",
+      "x": 0,
+      "y": 296,
+      "w": 1400,
+      "h": 408
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "text": "",
+      "href": "",
+      "src": "https://img.alicdn.com/imgextra/i2/O1CN010VLpQY1VWKHBQuBUQ_!!6000000002660-2-tps-222-222.png",
+      "x": 615,
+      "y": 296,
+      "w": 170,
+      "h": 170
+    },
+    {
+      "tag": "DIV",
+      "cls": "captcha-tips",
+      "text": "亲，请拖动下方滑块完成验证\n\n通过验证以确保正常访问\n\n\n请按住滑块，拖动到最右边\n\n点我反馈 >",
+      "href": "",
+      "src": "",
+      "x": 0,
+      "y": 502,
+      "w": 1400,
+      "h": 221
+    },
+    {
+      "tag": "DIV",
+      "cls": "warnning-text",
+      "text": "亲，请拖动下方滑块完成验证\n\n通过验证以确保正常访问",
+      "href": "",
+      "src": "",
+      "x": 0,
+      "y": 502,
+      "w": 1400,
+      "h": 76
+    },
+    {
+      "tag": "P",
+      "cls": "",
+      "text": "通过验证以确保正常访问",
+      "href": "",
+      "src": "",
+      "x": 0,
+      "y": 552,
+      "w": 1400,
+      "h": 26
+    },
+    {
+      "tag": "DIV",
+      "cls": "sm-pop-inner nc-container",
+      "text": "\n请按住滑块，拖动到最右边",
+      "href": "",
+      "src": "",
+      "x": 0,
+      "y": 623,
+      "w": 1400,
+      "h": 34
+    },
+    {
+      "tag": "DIV",
+      "cls": "nc_1_nocaptcha",
+      "text": "\n请按住滑块，拖动到最右边",
+      "href": "",
+      "src": "",
+      "x": 15,
+      "y": 623,
+      "w": 1370,
+      "h": 34
+    },
+    {
+      "tag": "DIV",
+      "cls": "nc_wrapper",
+      "text": "\n请按住滑块，拖动到最右边",
+      "href": "",
+      "src": "",
+      "x": 550,
+      "y": 623,
+      "w": 300,
+      "h": 34
+    },
+    {
+      "tag": "DIV",
+      "cls": "nc_scale",
+      "text": "\n请按住滑块，拖动到最右边",
+      "href": "",
+      "src": "",
+      "x": 550,
+      "y": 623,
+      "w": 300,
+      "h": 34
+    },
+    {
+      "tag": "SPAN",
+      "cls": "nc_iconfont btn_slide",
+      "text": "",
+      "href": "",
+      "src": "",
+      "x": 552,
+      "y": 625,
+      "w": 42,
+      "h": 30
+    },
+    {
+      "tag": "DIV",
+      "cls": "scale_text slidetounlock",
+      "text": "请按住滑块，拖动到最右边",
+      "href": "",
+      "src": "",
+      "x": 550,
+      "y": 623,
+      "w": 300,
+      "h": 34
+    },
+    {
+      "tag": "SPAN",
+      "cls": "nc-lang-cnt",
+      "text": "请按住滑块，拖动到最右边",
+      "href": "",
+      "src": "",
+      "x": 550,
+      "y": 623,
+      "w": 300,
+      "h": 28
+    },
+    {
+      "tag": "DIV",
+      "cls": "bx-pu-qrcode-wrap",
+      "text": "点我反馈 >",
+      "href": "",
+      "src": "",
+      "x": 0,
+      "y": 710,
+      "w": 1400,
+      "h": 102
+    },
+    {
+      "tag": "DIV",
+      "cls": "captcha-qrcode",
+      "text": "Y7pSieTB5_LMfA-SVZWtbQ|ajyZJA|FCOwAw_0|Bwr35Q|0",
+      "href": "",
+      "src": "",
+      "x": 0,
+      "y": 710,
+      "w": 1400,
+      "h": 80
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "text": "",
+      "href": "",
+      "src": "data:image/png;base64,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",
+      "x": 660,
+      "y": 710,
+      "w": 80,
+      "h": 80
+    },
+    {
+      "tag": "A",
+      "cls": "",
+      "text": "点我反馈 >",
+      "href": "https://www.9game.cn//kc/_____tmd_____/page/feedback?rand=S3WxGHAgAt756EpznwfNzJq2AFA2qBNla3j6EINUS8We9dazM_iKElp8DwVSHZUevpC41Bx7RzivXIj9RnZgdg&x5secdata=xg077921b53bcff117ja63ba5289e4c1e7f2cc7c0f925595ad6d1782356260a-717315356a337883139abaac3aaa33b4ce37456d8053b3ed361498e93dcd2e8__bx__www.9game.cn%3A443%2Fkc&type=1&language=cn&ncInitSuccess=true",
+      "src": "",
+      "x": 671,
+      "y": 795,
+      "w": 57,
+      "h": 17
+    },
+    {
+      "tag": "DIV",
+      "cls": "copyright",
+      "text": "© 1999-2026 Alibaba.com. All right  re erved.",
+      "href": "",
+      "src": "",
+      "x": 0,
+      "y": 930,
+      "w": 1400,
+      "h": 17
+    },
+    {
+      "tag": "SPAN",
+      "cls": "",
+      "text": "© 1999-2026 Alibaba.com. All right  re erved.",
+      "href": "",
+      "src": "",
+      "x": 0,
+      "y": 930,
+      "w": 1400,
+      "h": 17
+    }
+  ]
+}
