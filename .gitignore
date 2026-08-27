@@ -1,0 +1,23 @@
+﻿node_modules/
+dist/
+tmp/
+runtime-cache/
+.vite/
+
+# Local operational data. The public repository contains code only.
+/data/
+archive/
+
+# Local credentials and machine-specific settings.
+.env
+.env.*
+!.env.example
+
+# Browser and crawler runtime artifacts.
+playwright/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+__pycache__/
+*.pyc
