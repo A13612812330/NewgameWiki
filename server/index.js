@@ -4,7 +4,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
-import { buildCleanupIssuesForItems, cleanExistingMobileDataset, crawlSingleMobileRecord, crawlToday, gameIdentity, mobileAssociationKeys } from "./crawler/mobile.js";
+import { buildCleanupIssuesForItems, cleanExistingMobileDataset, crawlSingleMobileRecord, crawlToday, emptyDataset, gameIdentity, mobileAssociationKeys } from "./crawler/mobile.js";
 import { normalizeDataShape } from "./data-shape.js";
 import {
   appendOperationLog,
