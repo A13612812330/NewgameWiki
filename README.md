@@ -1,6 +1,19 @@
 # NewgameWiki
 
-本地优先的游戏资讯与排期管理工具。项目提供手游、福利游戏、Steam、端游资讯的采集、清洗、SQLite 主数据、管理后台和局域网只读访问。
+## 项目简介
+
+NewgameWiki 是一个面向游戏运营与内容团队的本地优先游戏资讯、活动和排期管理工具。它把分散在 TapTap、好游快爆、九游、小七手游、Steam、机核、游民星空和游侠网等平台的信息，采集、清洗、合并到一套可管理的数据中，再以网站形式提供展示和后台维护。
+
+它适合用于跟踪手游新游与预约、福利游戏、Steam 游戏与新游，以及端游资讯；也可作为后续“我方游戏库对比、未收录提醒、周报统计”的本地数据底座。项目默认单机运行，运营数据始终留在本机。
+
+## 数据流
+
+`平台列表/详情页 -> 字段清洗与去重 -> SQLite 主数据库 -> current.json 前端快照 -> 前台与管理后台`
+
+- SQLite 保存主记录、历史、任务、运行记录和操作日志。
+- `data/current.json` 是前端读取的快照，在抓取、编辑、隐藏、删除或重抓后自动更新。
+- 平台采集按增量合并执行：已有记录复用并补字段，新增记录才写入，不会用一次抓取直接清空整个数据池。
+- 访客服务只读，不提供采集、编辑、删除、任务管理等写入能力。
 
 ## 功能
 
@@ -44,6 +57,14 @@ npm run start
 
 首次启动时会自动创建本地 `data/`、SQLite 数据库和空快照；这些运行数据不会进入 Git。
 
+## 在其他电脑安装
+
+1. 安装 Node.js 22 或更新版本与 Git。
+2. 克隆仓库并执行上述 `npm install`。
+3. 复制 `.env.example` 为 `.env`，根据本机端口和缓存目录调整配置。
+4. 运行 `start-newgamewiki.ps1`，首次启动后系统会创建空的 `data/` 目录与 SQLite 数据库。
+5. 通过后台手动采集，或导入你自己的运营数据。原电脑的 `data/` 不会随 GitHub 自动迁移；如确有迁移需求，应单独、受控地备份和导入数据目录。
+
 ## 局域网只读访客服务
 
 ```powershell
@@ -62,6 +83,20 @@ powershell -ExecutionPolicy Bypass -File .\start-newgamewiki-readonly.ps1 -OpenB
 - `NEWWIKI_BROWSER_CACHE_DIR`：浏览器采集缓存目录，建议设为项目所在磁盘。
 - `SCHEDULER_CHECK_MS`、`SCHEDULER_TIMEOUT_MS`：定时任务检查频率和超时。
 - `NEWWIKI_TAPTAP_DETAIL_LIMIT`：每轮 TapTap 详情补全上限。
+- `NEWWIKI_PRUNE_BACKUPS`：设为 `1` 才会裁剪本机历史撤销与数据备份；默认不裁剪。
+- `NEWWIKI_MAX_UNDO_SNAPSHOTS`、`NEWWIKI_MAX_BACKUP_PAIRS`：开启裁剪后保留的撤销快照与备份数量。
+
+## GitHub 代码留档
+
+仓库可使用 `scripts/git-backup.ps1` 做每日代码留档。该脚本只提交未被 Git 忽略的源代码、文档和配置示例；`data/`、SQLite、缓存、日志与 `.env` 不会上传。
+
+手动执行：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\git-backup.ps1
+```
+
+建议通过 Windows 任务计划程序每天运行一次。项目配置的任务名为 `NewgameWiki-GitHub-Backup`，默认在每天 21:00 执行。任务遇到远程分支领先或 Git 冲突时会停止并写入 `tmp/git-backup/` 日志，不会强推或覆盖远程内容。
 
 ## 数据与开源边界
 

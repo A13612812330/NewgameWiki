@@ -52,6 +52,9 @@ const backupDir = path.join(dataDir, "backups");
 const schedulerCheckMs = Number(process.env.SCHEDULER_CHECK_MS || 60000);
 const schedulerTimeoutMs = Number(process.env.SCHEDULER_TIMEOUT_MS || 5 * 60 * 1000);
 const schedulerInitialDelayMs = Number(process.env.SCHEDULER_INITIAL_DELAY_MS || 2 * 60 * 1000);
+const maxUndoSnapshots = Number(process.env.NEWWIKI_MAX_UNDO_SNAPSHOTS || 10);
+const maxBackupPairs = Number(process.env.NEWWIKI_MAX_BACKUP_PAIRS || 10);
+const backupPruningEnabled = process.env.NEWWIKI_PRUNE_BACKUPS === "1";
 const runningSchedulerJobs = new Set();
 const schedulerStopRequests = new Map();
 let schedulerSweepRunning = false;
@@ -1282,7 +1285,10 @@ async function backupCurrentData() {
     const file = path.join(undoDir, `current-${Date.now()}.json`);
     await fs.writeFile(file, content, "utf8");
     const files = (await fs.readdir(undoDir)).filter((name) => /^current-\d+\.json$/.test(name)).sort().reverse();
-    await Promise.all(files.slice(20).map((name) => fs.rm(path.join(undoDir, name), { force: true })));
+    if (backupPruningEnabled) {
+      const keep = Math.max(1, maxUndoSnapshots);
+      await Promise.all(files.slice(keep).map((name) => fs.rm(path.join(undoDir, name), { force: true })));
+    }
   } catch {
     // No previous current.json yet.
   }
@@ -1308,7 +1314,10 @@ async function createDataBackup(reason = "manual") {
     .filter((name) => /-current\.json$|-newgamewiki\.db$/.test(name))
     .sort()
     .reverse();
-  await Promise.all(files.slice(20).map((name) => fs.rm(path.join(backupDir, name), { force: true })));
+  if (backupPruningEnabled) {
+    const keep = Math.max(1, maxBackupPairs) * 2;
+    await Promise.all(files.slice(keep).map((name) => fs.rm(path.join(backupDir, name), { force: true })));
+  }
   return result;
 }
 
