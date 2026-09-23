@@ -1,5 +1,7 @@
 # NewgameWiki
 
+> Agent 接手开发请先阅读 [`PROJECT_HANDOFF.md`](./PROJECT_HANDOFF.md) 和 [`AGENTS.md`](./AGENTS.md)。前者说明当前架构、数据流、接口、风险和接手步骤，后者记录项目视觉与数据规则。
+
 ## 项目简介
 
 NewgameWiki 是一个面向游戏运营与内容团队的本地优先游戏资讯、活动和排期管理工具。它把分散在 TapTap、好游快爆、九游、小七手游、Steam、机核、游民星空和游侠网等平台的信息，采集、清洗、合并到一套可管理的数据中，再以网站形式提供展示和后台维护。
