@@ -2,11 +2,15 @@
 
 > 文档日期：2026-09-23
 >
-> 代码仓库：<https://github.com/A13612812330/NewgameWiki>
+> 最新复刻仓库：<https://github.com/A13612812330/GH-NewGameWIki>
+>
+> 原代码与每日留档仓库：<https://github.com/A13612812330/NewgameWiki>
 >
 > 本机项目：`E:\新建文件夹\Codex-GPT\NewgameWiki`
 >
 > 目标读者：后续接手开发、排查和维护本项目的 Agent
+
+只需复刻并启动项目时，先看 [`AI_AGENT_SETUP.md`](./AI_AGENT_SETUP.md)，其中提供可直接交给 AI Agent 执行的完整提示词。
 
 ## 1. 项目概览
 

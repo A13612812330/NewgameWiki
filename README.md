@@ -1,6 +1,8 @@
 # NewgameWiki
 
-> Agent 接手开发请先阅读 [`PROJECT_HANDOFF.md`](./PROJECT_HANDOFF.md) 和 [`AGENTS.md`](./AGENTS.md)。前者说明当前架构、数据流、接口、风险和接手步骤，后者记录项目视觉与数据规则。
+> **交给 AI Agent 复刻/运行：**把仓库链接和 [`AI_AGENT_SETUP.md`](./AI_AGENT_SETUP.md) 中的整段提示词一起发给 Agent。Agent 应自行克隆、安装、构建、启动并验证，不要只给你一份操作建议。架构和接手细节见 [`PROJECT_HANDOFF.md`](./PROJECT_HANDOFF.md)，项目规则见 [`AGENTS.md`](./AGENTS.md)。
+
+仓库地址：<https://github.com/A13612812330/GH-NewGameWIki>
 
 ## 项目简介
 
